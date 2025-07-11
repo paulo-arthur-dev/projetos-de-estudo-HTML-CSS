@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 95%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 35px;
+    position: relative;
+}
+
+header h1 {
+    font-weight: normal;
+    color: rgb(43, 43, 43);
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+}
+
+span {
+    color: white;
+    background-color: rgb(43, 43, 43);
+    padding: 0 4px;
+    border-radius: 3px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+li {
+    list-style: none;
+    color: rgb(43, 43, 43);
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(44, 139, 228);
+    transition: width 0.3s ease;
+}
+
+li:hover {
+    color: rgb(44, 139, 228);
+}
+
+li:hover::after {
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    height: 500px;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: right top;
+    margin-bottom: 20px;
+}
+
+.banner-texto {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 6%;
+}
+
+.banner-texto h1 {
+    font-size: 5rem;
+    color: rgb(44, 139, 228);
+    font-weight: 500;
+}
+
+.banner-texto h2 {
+    font-size: 2rem;
+    color: rgb(43, 43, 43);
+    font-weight: normal;
+}
+
+.banner-texto h3 {
+    font-size: 1.5rem;
+    color: rgb(145, 145, 145);
+    font-weight: normal;
+}
+
+.solucoes {
+    display: flex;
+    gap: 50px;
+
+    padding: 0px 35px;
+    margin-bottom: 20px;
+}
+
+.solucoes-item h3 {
+    margin-top: 10px;
+    color: rgb(43, 43, 43);
+    font-weight: 500;
+}
+
+.solucoes-item p {
+    margin: 20px 0px;
+    color: rgb(145, 145, 145);
+}
+
+.solucoes-item a {
+    text-decoration: none;
+    color: rgb(44, 139, 228);
+    font-weight: bold;
+}
+
+.solucoes-item a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    header h1 {
+        margin-bottom: 15px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    li {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(43, 43, 43, 0.1);
+    }
+
+    li:last-child {
+        border-bottom: none;
+    }
+
+    li::after {
+        display: none;
+    }
+
+    li:hover {
+        background-color: rgba(44, 139, 228, 0.1);
+    }
+
+    .banner {
+        height: 400px;
+        background-position: center;
+    }
+
+    .banner-texto {
+        margin-left: 4%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .banner-texto h1 {
+        font-size: 3rem;
+    }
+
+    .banner-texto h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner-texto h3 {
+        font-size: 1.2rem;
+    }
+
+    .solucoes {
+        flex-direction: column;
+        gap: 30px;
+        padding: 15px;
+    }
+
+    .solucoes-item {
+        text-align: center;
+    }
+
+    .solucoes-item img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        width: 98%;
+    }
+
+    .banner-texto h1 {
+        font-size: 4rem;
+    }
+
+    .solucoes {
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .solucoes-item img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
