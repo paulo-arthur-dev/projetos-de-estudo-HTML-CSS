@@ -182,12 +182,12 @@ li:hover::after {
 
     .banner {
         height: 400px;
-        background-position: center;
+        background-position: right center;
     }
 
     .banner-texto {
         margin-left: 4%;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.603);
         padding: 20px;
         border-radius: 10px;
     }
@@ -202,6 +202,7 @@ li:hover::after {
 
     .banner-texto h3 {
         font-size: 1.2rem;
+        color: black;
     }
 
     .solucoes {
