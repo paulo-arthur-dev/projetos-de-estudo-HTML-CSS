@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #63444A;
+    padding: 10px 10%;
+    margin-bottom: 20px;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+
+        color: white;
+
+        img {
+            height: 90%;
+        }
+
+        h1 {
+            font-weight: bold;
+            cursor: default;
+        }
+    }
+
+
+
+    ul {
+        display: flex;
+        gap: 25px;
+
+
+        li {
+            list-style-type: none;
+
+            a {
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    color: #df9ba8;
+                }
+            }
+        }
+    }
+}
+
+header .dropdown {
+    display: none;
+}
+
+.btn {
+    background-color: #9e6d77;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+
+    picture {
+        margin-right: 15px;
+    }
+
+    .texto {
+        padding: 20px 0px;
+    }
+
+    h2 {
+        color: #63444A;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    p {
+        margin: 20px 0px;
+        line-height: 1.7em;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        background-color: #63444A;
+        padding: 15px;
+    }
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        padding: 10px;
+        border: 1px dotted #63444A;
+        color: #63444A;
+        font-size: 1.3rem;
+        text-align: center;
+        transition: 0.3s;
+        cursor: default;
+
+        h3 {
+            font-weight: bold;
+        }
+        
+        img {
+            width: 50px;
+        }
+
+        &:hover {
+            transform: scale(1.03);
+            transition: 0.3s;
+            box-shadow: 2px 2px 3px 0px;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1190px) {
+    main {
+        flex-direction: column;
+
+        picture {
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        display: none;
+    }
+
+    header .dropdown {
+        display: block;
+    }
+
+    picture img {
+        width: 100%;
+    }
+
+    .grid-cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
