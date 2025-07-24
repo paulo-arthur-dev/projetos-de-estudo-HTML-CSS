@@ -7,6 +7,8 @@ Este espaço é dedicado a praticar e aprimorar meus conhecimentos na construç�
 
 Clique nas imagens abaixo para abrir os projetos.
 
-[![Landing Page](prints/landingpage.png)](https://paulo-arthur-dev.github.io/projetos-de-estudo-HTML-CSS/landing%20page/index.html)
+[![Landing Page](prints/landing-page.png)](https://paulo-arthur-dev.github.io/projetos-de-estudo-HTML-CSS/landing%20page/index.html)
 
 [![Página de viagens](prints/viagens.png)](https://paulo-arthur-dev.github.io/projetos-de-estudo-HTML-CSS/pagina%20de%20viagens/index.html)
+
+[![Página de serviços](prints/serviços.png)](https://paulo-arthur-dev.github.io/projetos-de-estudo-HTML-CSS/pagina%20de%20servi%C3%A7os/index.html)
