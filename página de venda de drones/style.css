@@ -1,0 +1,183 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 80vw;
+    margin: 10px auto;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #333333;
+    padding: 10px 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo h1 {
+    color: white;
+    font-weight: 800;
+    cursor: default;
+}
+
+span {
+    color: #E64A19;
+}
+
+nav {
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #E64A19;
+    transition: 0.3s;
+}
+
+header .btn-group {
+    display: none;
+}
+
+.banner {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-position: right center;
+    height: 300px;
+}
+
+.banner div {
+    width: 330px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.drones-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+
+    width: 90%;
+    margin: 20px auto;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin: 0px auto;
+    transition: 0.3s;
+}
+
+.item:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.item h3 {
+    color: #E64A19;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.item p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.item span {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.item a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #E64A19;
+    padding: 20px 10px;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
+.dropdown-item {
+    margin: 10px 0px;
+}
+
+
+@media screen and (max-width: 1190px) {
+    header nav {
+        display: none;
+    }
+
+    header .btn-group {
+        display: block;
+    }
+
+    .drones-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    .banner {
+        background-position: center center;
+    }
+
+    .banner div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-left: 10px;
+        background-color: #3333339a;
+        border-radius: 6px;
+    }
+    
+    .drones-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
