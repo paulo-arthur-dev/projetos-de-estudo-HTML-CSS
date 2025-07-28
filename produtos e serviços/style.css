@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Albert Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #D9D9D9;
+    padding: 20px;
+}
+
+#logo {
+    font-size: 35px;
+    font-weight: normal;
+    color: #333333;
+    padding-right: 100px;
+    cursor: default;
+    transition: .3s;
+}
+
+#logo:hover {
+    transform: scale(1.06);
+    transition: .3s;
+}
+
+span {
+    color: #6288AB;
+}
+
+#menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    list-style-type: none;
+}
+
+#menu-list a {
+    text-decoration: none;
+    color: #333333;
+    transition: .2s;
+}
+
+#menu-list a:hover {
+    color: #6288AB;
+    transition: .2s;
+}
+
+section img{
+    width: 100%;
+}
+
+main h2{
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0;
+    color: #6288AB;
+    font-weight: normal;
+}
+
+main {
+    padding: 20px;
+    margin: 20px auto;
+}
+
+#colecao-produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    background-color: #D9D9D9;
+    width: 31%;
+    padding: 20px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.produto:hover img {
+    transform: scale(1.13);
+    transition: 0.3s;
+}
+
+.produto h4 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #333333;
+}
+
+.produto a {
+    padding: 15px 20px;
+    width: 200px;
+    color: #D9D9D9;
+    background-color: #6288AB;
+    text-decoration: none;
+}
+
+#teamwork {
+    width: 100%;
+    padding: 20px 90px;
+    margin: 40px auto;
+    background-color: #333333;
+    color: #D9D9D9;
+}
+
+#teamwork h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0;
+    font-weight: normal;
+    color: #6288AB;
+}
+
+.teamwork-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+    
+    padding: 20px;
+    text-align: center;
+}
+
+.item img {
+    width: 400px;
+    height: 225px;
+    transition: 0.5s;
+}
+
+.item img:hover {
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+.item p {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#workshop {
+    width: 90%;
+    margin: 50px auto;
+
+}
+
+#workshop h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0;
+    color: #6288AB;
+    font-weight: normal;
+}
+
+#workshop h3, p {
+    margin: 10px 0;
+}
+
+#workshop img {
+    width: 100%;
+    margin: 30px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    menu {
+        margin-top: 10px;
+    }
+
+    #logo {
+        font-size: 8vw;
+    }
+
+    #menu-list {
+        gap: 20px;
+    }
+
+    #menu-list a {
+        font-size: 3.5vw;
+        background-color: #6288AB;
+        font-weight: 600;
+        color: #D9D9D9;
+        padding: 5px 7px;
+        border-radius: 25px;
+    }
+
+    #menu-list a:hover {
+        color: #D9D9D9;
+    }
+
+    #logo {
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .produto {
+        width: 100%;
+    }
+
+    .produto:hover img {
+        transform: none;
+    }
+
+    .produto a {
+        border-radius: 5px;
+    }
+
+    #teamwork {
+        padding: 20px;
+    }
+
+    .item {
+        flex-direction: column;
+    }
+
+    .item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .item img:hover {
+        transform: none;
+    }
+
+    #workshop {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .produto {
+        width: 45%;
+    }
+
+    #teamwork {
+        padding: 20px 40px;
+    }
+
+    .item img {
+        width: 300px;
+        height: auto;
+    }
+}
