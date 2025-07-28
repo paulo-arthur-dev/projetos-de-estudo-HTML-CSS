@@ -158,6 +158,11 @@ header .btn-group {
 }
 
 @media screen and (max-width: 670px) {
+    body {
+        width: 100%;
+        margin-top: 0px;
+    }
+    
     header {
         padding: 20px 10px;
     }
