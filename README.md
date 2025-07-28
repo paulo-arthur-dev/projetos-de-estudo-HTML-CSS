@@ -2,11 +2,16 @@
 
 Esse é meu repositório de projetos de estudo com **HTML** e **CSS**!  
 Quero usar esse espaço para praticar e aprimorar meus conhecimentos na construção de páginas web usando essas duas linguagens.
+
 (Todos os projetos estão **responsivos** ou seja, se adaptam a diferentes tamanhos de tela)
 
 ## 📁 Como Visualizar
 
 Clique nos prints para abrir meus projetos.
+
+[![Produtos e serviços](prints/produtos-e-serviços.png)](https://paulo-arthur-dev.github.io/projetos-de-estudo-HTML-CSS/produtos%20e%20servi%C3%A7os/index.html)
+
+[![Landing Page](prints/serviços-e-design.png)](https://paulo-arthur-dev.github.io/projetos-de-estudo-HTML-CSS/servi%C3%A7os%20e%20design/index.html)
 
 [![Landing Page](prints/landing-page.png)](https://paulo-arthur-dev.github.io/projetos-de-estudo-HTML-CSS/landing%20page/index.html)
 
