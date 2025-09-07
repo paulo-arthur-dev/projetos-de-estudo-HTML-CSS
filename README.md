@@ -13,6 +13,8 @@ Clique nos prints para abrir meus projetos.
 
 [![Landing Page](prints/serviços-e-design.png)](https://paulo-arthur-dev.github.io/projetos-de-estudo-HTML-CSS/servi%C3%A7os%20e%20design/index.html)
 
+[![Receita](prints/receita.png)](https://paulo-arthur-dev.github.io/projetos-de-estudo-HTML-CSS/receita/index.html)
+
 [![Landing Page](prints/landing-page.png)](https://paulo-arthur-dev.github.io/projetos-de-estudo-HTML-CSS/landing%20page/index.html)
 
 [![Página de viagens](prints/viagens.png)](https://paulo-arthur-dev.github.io/projetos-de-estudo-HTML-CSS/pagina%20de%20viagens/index.html)
